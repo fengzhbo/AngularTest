@@ -1,0 +1,25 @@
+{
+  "name": "angularApp",
+  "version": "1.0.0",
+  "authors": [
+    "fengzhbo <563128453@qq.com>"
+  ],
+  "description": "this is a test angular project.",
+  "keywords": [
+    "angular",
+    "test"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies":{
+    "requirejs":"2.1.10",
+    "angular":"1.2.8"
+  }
+}
