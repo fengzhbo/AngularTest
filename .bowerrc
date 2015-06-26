@@ -1,0 +1,9 @@
+{
+	"directory":"app/components",
+
+	"registry":{
+		"search":[
+			"https://bower.herokuapp.com"
+		]
+	}
+}
