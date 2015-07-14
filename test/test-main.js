@@ -10,10 +10,10 @@
 
 require(['base/app/js/main'], function() {
     requirejs.config({
-        baseUrl: 'base/',
+        baseUrl: 'base/app',
 
         paths: {
-            'angularMocks': 'app/components/angular-mocks/angular-mocks'
+            'angularMocks': 'components/angular-mocks/angular-mocks'
         },
 
         shim: {
@@ -26,7 +26,7 @@ require(['base/app/js/main'], function() {
 
         callback: function() {
 
-            var fileReg = /(spec|test).js$/i;
+            var fileReg = /(Spec|Test).js$/i;
             var files = [];
 
             for (var file in window.__karma__.files) {

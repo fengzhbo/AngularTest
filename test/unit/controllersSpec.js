@@ -13,7 +13,7 @@ describe('angularApp controllers', function() {
                     $scope: scope
                 });
 
-            expect(scope.qty).teBe(1);
+            expect(scope.qty).toEqual(1);
 
         }));
 

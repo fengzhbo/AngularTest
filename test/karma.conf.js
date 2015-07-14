@@ -33,7 +33,7 @@ module.exports = function(config) {
 
 
         // list of files to exclude
-        exclude: ['app/js/main.js'],
+        //exclude: ['app/js/main.js'],
 
 
         // // preprocess matching files before serving them to the browser
