@@ -10,7 +10,7 @@
 
 require(['base/app/js/main'], function() {
     requirejs.config({
-        baseUrl: 'base/app',
+        baseUrl: '/base/app',
 
         paths: {
             'angularMocks': 'components/angular-mocks/angular-mocks'

@@ -8,7 +8,11 @@ requirejs.config({
 
         'app': 'js/app',
 
-        'pageController': 'js/controllers/pageController'
+        'pageController': 'js/controllers/pageController',
+
+        'helloController': 'js/controllers/helloController',
+        
+        'cartController': 'js/controllers/cartController'
 
     },
 
@@ -26,7 +30,7 @@ requirejs.config({
 
 });
 
-require(['angular', 'app', 'pageController'], function(angular) {
+require(['angular', 'app', 'pageController', 'helloController', 'cartController'], function(angular) {
 
     angular.bootstrap(document, ['AngularApp']);
 
