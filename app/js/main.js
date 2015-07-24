@@ -11,8 +11,14 @@ requirejs.config({
         'pageController': 'js/controllers/pageController',
 
         'helloController': 'js/controllers/helloController',
-        
-        'cartController': 'js/controllers/cartController'
+
+        'cartController': 'js/controllers/cartController',
+
+        'hideAndShowController': 'js/controllers/hideAndShowController',
+
+        'userInfoService': 'js/service/userInfoService',
+
+        'titleCaseFilter' : 'js/filter/titleCaseFilter'
 
     },
 
@@ -30,7 +36,10 @@ requirejs.config({
 
 });
 
-require(['angular', 'app', 'pageController', 'helloController', 'cartController'], function(angular) {
+require(['angular', 'app', 'pageController',
+    'helloController', 'cartController',
+    'hideAndShowController'
+], function(angular) {
 
     angular.bootstrap(document, ['AngularApp']);
 

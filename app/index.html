@@ -9,12 +9,14 @@
 
 <body>
     <div ng-controller="HelloController">
+        <h2>双向数据绑定</h2>
         type some word:
         <input ng-model="greeting.text" type="text">
-        <br> {{greeting.text}} wrold!!
+        <br> {{greeting.text | TitleCase:1}} {{greeting.userName}}!!
     </div>
     <br>
     <div ng-controller="PageController">
+        <h2>$scope.$watch</h2>
         <b>订单：</b>
         <div>数量：
             <input type="number" ng-model="qty" required>
@@ -29,13 +31,21 @@
     </div>
     <br>
     <div ng-controller="CartController">
-        <h2>Your shopping cart</h2>
-        <ul ng-repeat="(key,item) in ShopCart">
-            <li>{{key}}:{{item.name}}
+        <h2>Your shopping cart ng-repeat</h2>
+        <ul>
+            <li ng-repeat="(key,item) in ShopCart">{{key}}:{{item.name}}
                 <input type="text" ng-model="item.count"> {{item.price | currency}} {{item.price*item.count | currency}}
                 <input ng-click="remove($index)" type="button" value="remove">
             </li>
         </ul>
+    </div>
+    <br>
+    <div ng-controller="HideAndShowController">
+        <h2>ng-show ng-hide</h2>
+        <p ng-show="thisDivShow">this is a common Paragraph,but you can hide or show it through press show and close button.</p>
+        <br>
+        <button ng-click="show()">显示</button>
+        <button ng-click="hide()">隐藏</button>
     </div>
 </body>
 
