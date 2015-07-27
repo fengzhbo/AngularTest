@@ -1,0 +1,7 @@
+<ul>
+	<li ng-repeat="(key, message) in messages">
+		<span>{{message.sender}}</span>
+		<a ng-href="#/view/{{message.id}}">{{message.title}}</a>
+		<span>{{message.sendTime}}</span>
+	</li>
+</ul>

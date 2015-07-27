@@ -9,8 +9,7 @@
 
 <body>
     <div ng-controller="HelloController">
-        <h2>双向数据绑定</h2>
-        type some word:
+        <h2>双向数据绑定</h2> type some word:
         <input ng-model="greeting.text" type="text">
         <br> {{greeting.text | TitleCase:1}} {{greeting.userName}}!!
     </div>
@@ -46,6 +45,10 @@
         <br>
         <button ng-click="show()">显示</button>
         <button ng-click="hide()">隐藏</button>
+    </div>
+    <br>
+    <h2>路由</h2>
+    <div ng-view>
     </div>
 </body>
 

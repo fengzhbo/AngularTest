@@ -18,9 +18,10 @@
     "test",
     "tests"
   ],
-  "dependencies":{
-    "requirejs":"2.1.10",
-    "angular":"1.2.8",
-    "angular-mocks":"1.4.1"
+  "dependencies": {
+    "requirejs": "2.1.10",
+    "angular": "1.4.3",
+    "angular-mocks": "1.4.1",
+    "angular-route": "~1.4.3"
   }
 }

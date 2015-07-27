@@ -6,6 +6,8 @@ requirejs.config({
 
         'angular': 'components/angular/angular',
 
+        'angularRoute': 'components/angular-route/angular-route',
+
         'app': 'js/app',
 
         'pageController': 'js/controllers/pageController',
@@ -18,7 +20,13 @@ requirejs.config({
 
         'userInfoService': 'js/service/userInfoService',
 
-        'titleCaseFilter' : 'js/filter/titleCaseFilter'
+        'titleCaseFilter': 'js/filter/titleCaseFilter',
+
+        'listController': 'js/controllers/listController',
+
+        'detailController': 'js/controllers/detailController',
+
+        'route': 'js/route'
 
     },
 
@@ -26,6 +34,10 @@ requirejs.config({
 
         'angular': {
             exports: 'angular'
+        },
+
+        'angularRoute': {
+            deps: ['angular']
         }
 
     },
@@ -38,7 +50,8 @@ requirejs.config({
 
 require(['angular', 'app', 'pageController',
     'helloController', 'cartController',
-    'hideAndShowController'
+    'hideAndShowController',
+    'route'
 ], function(angular) {
 
     angular.bootstrap(document, ['AngularApp']);

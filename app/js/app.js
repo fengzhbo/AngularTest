@@ -1,7 +1,7 @@
-define(["angular"], function(angular) {
+define(["angular","angularRoute"], function(angular) {
 
     'use strict';
 
-    return angular.module('AngularApp', []);
+    return angular.module('AngularApp', ['ngRoute']);
 
 });
